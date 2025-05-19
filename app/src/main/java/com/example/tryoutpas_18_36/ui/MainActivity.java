@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import com.example.tryoutpas_18_36.R;
 import com.example.tryoutpas_18_36.ui.fragment.EnglishFragment;
 import com.example.tryoutpas_18_36.ui.fragment.FragmentHome;
+import com.example.tryoutpas_18_36.ui.fragment.SpanishFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
                 fragment = new FragmentHome();
             } else if (itemId == R.id.nav_english) {
                 fragment = new EnglishFragment();
+            } else if (itemId == R.id.nav_spain) {
+                fragment = new SpanishFragment();
             }
 
             if (fragment != null) {
